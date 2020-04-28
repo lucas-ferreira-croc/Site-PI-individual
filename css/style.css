@@ -7,8 +7,20 @@ body{
     background-color: #000000;
 }
 
+.conatinerEsquerda {
+    
+    float: left;
+    width: 15%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.conatinerEsquerda img{
+    height: 150px;
+}
+
 .container{
-    width:80%;
+    width:70%;
     margin:auto;
     overflow: hidden;
 }
@@ -69,16 +81,18 @@ ul{
 
 
 .footer{
+    
     width: 100%;
     margin:auto;
     overflow: hidden;
     margin-top: 100px;
-    background: white;
+    color: #09ed46;
     height: 100px;
-    border-bottom: #e8491d 3px solid;
+    border-bottom: #09ed46 3px solid;  
 }
 
 .footer .titulo{
+    
     text-transform: uppercase;
     margin-left: 45%;
     margin-top: 95%;
@@ -86,6 +100,8 @@ ul{
 }
 
 .footer .texto{
+    
+    text-align: center;
     width:400px;
     margin:auto;
 }
