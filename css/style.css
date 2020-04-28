@@ -16,7 +16,25 @@ body{
 }
 
 .conatinerEsquerda img{
-    height: 150px;
+    margin-top: 100px;
+    height: 320px;
+}
+
+.title-header .highlight{
+    color: #09ed46;
+}
+
+.conatinerDireita {
+    
+    float: right;
+    width: 15%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.conatinerDireita img{
+    margin-top: 100px;
+    height: 320px;
 }
 
 .container{
