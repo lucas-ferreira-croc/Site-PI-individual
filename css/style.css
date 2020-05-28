@@ -4,9 +4,44 @@ body{
     line-height: 1.5;
     padding: 0;
     margin: 0;
-    background-color: #000000;
+   
+}
+/* Css da página preview, a página que aparece antes de entrar de fato no site */
+.body_preview{
+
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
+.container-preview{
+
+   width: 500px;
+   height: 500px;
+   position: absolute;
+   top: 15%;
+   left: 33%; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo_escrito{
+    margin-top: -50px;
+    width: 500px;
+}
+.botao_preview{
+    margin-left: 25%;
+    font: sans-serif;
+}
+
+
+/* fim do css da página preview */
 .conatinerEsquerda {
     
     float: left;
