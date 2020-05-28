@@ -44,7 +44,20 @@ body{
 /* fim do css da página preview */
 
 /* Css da página Index, a página home do site */
+.body_index{
+    background-color: #5aaa;
+    width: 100%;
+    height: 100%;
+}
 
+.conatiner_index{
+    position: relative;
+}
+
+.barra_tarefa{
+    position: absolute;
+    bottom: 0;
+}
 
 /* fim do css da página Index */
 
