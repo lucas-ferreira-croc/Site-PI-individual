@@ -34,11 +34,10 @@ body{
     margin-top: -50px;
     width: 500px;
 }
+
 .botao_preview{
     margin-left: 25%;
 }
-
-
 /* fim do css da página preview */
 
 /* Css da página Index, a página home do site */
@@ -58,29 +57,143 @@ body{
     bottom: 0;
 }
 
+.icones{
+    position: relative;
+
+}
+
 .iconP{
     margin-top: 5px;
     margin-left: 10px;
+    position: absolute;
 }
 
 .iconR{
-    margin-top: 50px;
+    margin-top: 115px;
+    position: absolute;
     
 }
 
 .iconC{
-    margin-top: 50px;
+    margin-top: 230px;
+    position: absolute;
 }
 
 .iconIE{
     margin-left: 15px;
-    margin-top: 50px;
+    margin-top: 350px;
+    position: absolute;
 }
 
 .iconN{
-    margin-left: 120px;
-    margin-top: -200px;
-    margin-bottom: 30px;
+    margin-left: 7px;
+    margin-top: 495px;
+    position: absolute; 
+} 
+
+.iconH{
+    margin-left: 100px;
+    margin-top: 6px;
+    position: absolute;
+} 
+
+.iconM{
+    margin-left: 1390px;
+    margin-top: 535px;
+    position: absolute;
+}
+
+.gerenciador_botao{
+    width: 134px;
+    height: 55px;
+    margin-left: 3px;
+    margin-top: 662px;
+    position: absolute;
+}
+
+.gerenciador_imagem{
+    display: none;
+    margin-top: 273px;
+    position: absolute;
+}
+
+.shutdown{
+    height: 33px;
+    width: 142px;
+    margin-top: 620px;
+    margin-left: 24px;
+    position: absolute;
+}
+
+.fechar{
+    opacity: 0%;
+}
+
+.logo_index{
+    margin-left: 505px;
+    margin-top: 80px;
+    width: 500px;
+    position: absolute;
+}
+
+.lixeira_index{
+    margin-left: 365px;
+    margin-top: 70px;
+    display: none;
+    position: absolute;
+}
+
+.lixeira_botao{
+    width: 16px;
+    height: 14px;
+    margin-left: 821px;
+    margin-top: 75px;
+    position: absolute;
+}
+
+.controle_index{
+    display: none;
+    margin-left: 698px;
+    margin-top: 102px;
+    position: absolute;
+}
+
+.painel_botao{
+    width: 16px;
+    height: 14px;
+    margin-left: 1135px;
+    margin-top: 108px;
+    position: absolute;
+}
+
+.conexao_index{
+    display: none;
+    margin-left: 208px;
+    margin-top: 57px;
+    position: absolute;
+}
+
+.conexao_botao{
+    width: 16px;
+    height: 14px;
+    margin-left: 716px;
+    margin-top: 63px;
+    position: absolute;
+}
+
+.internet_index{
+    display: none;
+    margin-left: 540px;
+    margin-top: 158px;
+    position: absolute;
+}
+
+.internet_botao{
+    width: 16px;
+    height: 14px;
+    margin-left: 998px;
+    margin-top: 164px;
+    position: absolute;
 }
 /* fim do css da página Index */
 
@@ -89,9 +202,4 @@ body{
 .container_arte{
     position: relative;
 }
-
-.arte{
-  
-}
-
 /* fim do css da página arte */

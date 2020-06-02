@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +9,63 @@
     <script src="Scripts/script.js"></script>
     <title>Croc Studios</title>
 </head>
-<body class="body_index">  
-   <div class="container_barra">
-       <img src="img/win98.png" alt="Barra de tarefas do windows 98" class="barra_tarefa">             
-       <div>
-           <a href="arte.html">
-                <img class="iconP"  src="img/icon-paint.png" alt="Icone do Paint">
+
+<body class="body_index" onclick="teste()">
+    <div class="container_barra">
+        <img src="img/win98.png" alt="Barra de tarefas do windows 98" class="barra_tarefa">
+    </div>
+
+    <div class="icones">
+        <div>
+            <a href="arte.html">
+                <img class="iconP" src="img/icon-paint.png" alt="Icone do Paint">
             </a>
-         </div> 
-         <div>
-             <a href="">
-                 <img class="iconR" src="img/icon-recycle.png" alt="Icone da lixeira">
-             </a>
-         </div>
-         <div>
-             <a href="">
-                <img class="iconC" src="img/icon-computer.png" alt="Icone Meu computador">
-             </a>
-         </div>
-         <div>
-             <a href="">
-                 <img class="iconIE" src="img/icon-internet.png" alt="Icone Internet explorer">
-             </a>
-         </div>
-         <div>
-             <a href="">
-                <img class="iconN" src="img/icon-network.png" alt="Icone networking">
-             </a>
-         </div>
-   </div>
+        </div>
+
+        <img onclick="abreLixeira()" class="iconR" src="img/icon-recycle.png" alt="Icone da lixeira">
+        
+        <img onclick="abrePainel()" class="iconC" src="img/icon-computer.png" alt="Icone Meu computador">
+
+        <img onclick="abreInternet()" class="iconIE" src="img/icon-internet.png" alt="Icone Internet explorer">
+
+        <img onclick="abreConexao()" class="iconN" src="img/icon-network.png" alt="Icone networking">
+       
+        
+        <img class="iconH" src="img/icon-historia.png" alt="Icone de um arquivo de texto sobre a historia do croc studios">
+           
+        <div>
+            <a href="media.html">
+                <img class="iconM" src="img/icon-media.png" alt="Icone de midia que vai levar pra pagina de media">
+            </a>
+        </div>
+    </div>
+    
+    <div class="gerenciador_botao" onclick="manager()"></div>
+    
+    <img id="gi" class="gerenciador_imagem" src="img/gerenciador-aplicacoes.png" alt="gerenciador de aplicações do windows 98">
+    
+    <div class="shutdown">
+        <a href="preview.html">
+            <div class="fechar">fechou</div>
+        </a>
+    </div>
+    
+    <img class="logo_index" src="img/crocEscrito.png" alt="logo da croc Studios">
+
+    <img id="lixo" class="lixeira_index" src="img/lixeira.png" alt="Imagem da lixeira que ficará exposta no desktop">
+
+    <div class="lixeira_botao" onclick="fechaLixeira()"></div>
+
+    <img id="painel" class="controle_index" src="img/painel_controle.png" alt="Imagem do painel de controle que ficará exposto no desktop">
+    
+    <div class="painel_botao" onclick="fechaPainel()"></div>
+
+    <img id="conexao" class="conexao_index" src="img/connection.png" alt="Imagem para ilustrar conexão que ficará exposta no desktop">
+
+    <div class="conexao_botao" onclick="fechaConexao()"></div>
+
+    <img id="internet" class="internet_index" src="img/internet.png" alt="Imagem de uma instancia do internet explorer que ficará exposto no desktop">
+
+    <div class="internet_botao" onclick="fechaInternet()"></div>
 </body>
 </html>
