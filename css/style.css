@@ -195,11 +195,50 @@ body{
     margin-top: 164px;
     position: absolute;
 }
+
+.texto_historia{
+    display: none;
+    margin-left: 358px;
+    margin-top: 154px;
+    position: absolute;
+}
+
+.texto_botao{
+    width: 16px;
+    height: 14px;
+    margin-left: 816px;
+    margin-top: 159px;
+    position: absolute;
+}
 /* fim do css da página Index */
 
 /* Css da página arte, a página que expões pixel art's */
 
-.container_arte{
-    position: relative;
+
+.fundo_paint{
+    position: absolute;
+}
+
+.botao_arte{
+    width: 32px;
+    height: 28px;
+    margin-left: 1451px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.gerenciador_botao_arte{  
+    width: 134px;
+    height: 55px;
+    margin-left: 3px;
+    margin-top: 658px;
+    position: absolute;
+
+}
+
+.gerenciador_imagem_arte{
+    display: none;
+    margin-top: 267px;
+    position: absolute;
 }
 /* fim do css da página arte */

@@ -50,4 +50,14 @@ function fechaInternet()
 {
     internet.style.display = 'none';
 }
+
+function abreTexto()
+{
+    historia.style.display = 'block';
+}
+
+function fechaTexto()
+{
+    historia.style.display = 'none';
+}
 //fim das funções da página Index
