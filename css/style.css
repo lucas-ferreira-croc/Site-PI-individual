@@ -8,7 +8,6 @@ body{
 }
 /* Css da página preview, a página que aparece antes de entrar de fato no site */
 .body_preview{
-
     background-color: black;
     width: 100%;
     height: 100%;
@@ -16,7 +15,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .container-preview{
@@ -242,3 +240,12 @@ body{
     position: absolute;
 }
 /* fim do css da página arte */
+
+/* Css da página media, que vai ter a validação dos dados e mostrar um trailer */
+
+.body_media{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+/* fim do css da página media */
