@@ -208,6 +208,22 @@ body{
     margin-top: 159px;
     position: absolute;
 }
+
+.paint_barra{
+    margin-top: 676px;
+    margin-left: 178px;
+    width: 40px;
+    height: 35px;
+    position: absolute;
+}
+
+.internet_barra{
+    margin-top: 675px;
+    margin-left: 235px;
+    width: 40px;
+    height: 35px;
+    position: absolute;
+}
 /* fim do css da página Index */
 
 /* Css da página arte, a página que expões pixel art's */
