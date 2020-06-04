@@ -60,4 +60,10 @@ function fechaTexto()
 {
     historia.style.display = 'none';
 }
+
+function showTheCroc()
+{
+    formulario.style.display = 'none';
+    god.style.display = 'block';
+}
 //fim das funções da página Index
