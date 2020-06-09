@@ -195,17 +195,17 @@ body{
 }
 
 .texto_historia{
-    display: none;
+    display: block;
     margin-left: 358px;
-    margin-top: 154px;
+    margin-top: 50px;
     position: absolute;
 }
 
 .texto_botao{
-    width: 16px;
-    height: 14px;
-    margin-left: 816px;
-    margin-top: 159px;
+    width: 30px;
+    height: 26px;
+    margin-left: 1274px;
+    margin-top: 62px;
     position: absolute;
 }
 
