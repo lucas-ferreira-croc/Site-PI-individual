@@ -195,7 +195,7 @@ body{
 }
 
 .texto_historia{
-    display: block;
+    display: none;
     margin-left: 358px;
     margin-top: 50px;
     position: absolute;
