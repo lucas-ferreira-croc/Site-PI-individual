@@ -201,21 +201,47 @@ body{
     position: absolute;
 }
 
+.saoPaulo{
+    width: 92px;
+    height: 18px;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 192px;
+    display: none;
+    color: #4d1cb8;
+}
+
 .container-tooltip-historia{
-    position: absolute; 
-    visibility: hidden;
-    font-size: 15px; 
+    position: relative;
+    display: inline-block;
+}
+
+.container-tooltip-historia:hover .tooltip-historia{visibility: visible;}
+
+.tooltip-historia{position: absolute; 
+    visibility: hidden; 
+    font-size: 15px;
     width: 200px;
-    background: #cabde6;
-    color: #008f11;
+    background: #232323;
+    color: #ffff;
     text-align: center; 
     padding: 5px 0;
-    border-radius: 6px; 
+    border-radius: 6px;
     bottom: 100%; 
     left: 50%; 
     margin-left: -100px; 
-    margin-bottom: 5px; 
-}
+    margin-bottom: 5px; }
+
+ .tooltip-historia::after {content: " "; 
+    position: absolute; 
+    top: 100%; 
+    left: 50%; 
+    margin-left: -5px;
+    border-width: 5px; 
+    border-style: solid; 
+    border-color: #232323 transparent transparent transparent;}
+
+
 
 
 .texto_botao{
@@ -306,13 +332,35 @@ body{
 
 .container-tooltip-input:hover .tooltip-input{visibility: visible;}
 
-.tooltip-input{position: absolute; visibility: hidden; font-size: 15px; width: 200px; background: #cabde6;color: #008f11; text-align: center; padding: 5px 0; border-radius: 6px; bottom: 100%; left: 50%; margin-left: -100px; margin-bottom: 5px; }
-    .tooltip-input::after {content: " "; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #000 transparent transparent transparent;}
+.tooltip-input{position: absolute; 
+    visibility: hidden; 
+    font-size: 15px;
+    width: 200px;
+    background: #232323;
+    color: #008f11;
+    text-align: center; 
+    padding: 5px 0;
+    border-radius: 6px;
+    bottom: 100%; 
+    left: 50%; 
+    margin-left: -100px; 
+    margin-bottom: 5px; }
+
+ .tooltip-input::after {content: " "; 
+    position: absolute; 
+    top: 100%; 
+    left: 50%; 
+    margin-left: -5px;
+    border-width: 5px; 
+    border-style: solid; 
+    border-color: #232323 transparent transparent transparent;}
 
 .inputs
 {
     border-radius: 10px;
-    background-color: #cabde6;
+    background-color: #232323;
+    color: #008f11;
+    font-size: 15px;
 }
 
 .input-radio
