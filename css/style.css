@@ -201,6 +201,23 @@ body{
     position: absolute;
 }
 
+.container-tooltip-historia{
+    position: absolute; 
+    visibility: hidden;
+    font-size: 15px; 
+    width: 200px;
+    background: #cabde6;
+    color: #008f11;
+    text-align: center; 
+    padding: 5px 0;
+    border-radius: 6px; 
+    bottom: 100%; 
+    left: 50%; 
+    margin-left: -100px; 
+    margin-bottom: 5px; 
+}
+
+
 .texto_botao{
     width: 30px;
     height: 26px;
@@ -271,11 +288,9 @@ body{
 
 .form_media{
     width: 1000px;
-    height: 500px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 700px;
+    position: relative;
+    background-color: black;
 }
 
 .div_aviso{
@@ -283,6 +298,31 @@ body{
     color: #008f11;
     text-align: center;
 }
+
+.container-tooltip-input{
+    position: relative;
+    display: inline-block;
+}
+
+.container-tooltip-input:hover .tooltip-input{visibility: visible;}
+
+.tooltip-input{position: absolute; visibility: hidden; font-size: 15px; width: 200px; background: #cabde6;color: #008f11; text-align: center; padding: 5px 0; border-radius: 6px; bottom: 100%; left: 50%; margin-left: -100px; margin-bottom: 5px; }
+    .tooltip-input::after {content: " "; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #000 transparent transparent transparent;}
+
+.inputs
+{
+    border-radius: 10px;
+    background-color: #cabde6;
+}
+
+.input-radio
+{
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
 
 .dogi{
     display: none;

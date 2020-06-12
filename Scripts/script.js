@@ -60,10 +60,30 @@ function fechaTexto()
 {
     historia.style.display = 'none';
 }
+//fim das funções da página Index
 
+// começo das funções da página preview
 function showTheCroc()
 {
-    formulario.style.display = 'none';
-    god.style.display = 'block';
+    let erros = validaForm(); 
 }
-//fim das funções da página Index
+
+// function validaForm()
+// {
+//     let erros = [];
+    
+//     if(!name.value)
+//     {
+//         erros.push("please, fill out your name");
+//     }
+
+//     if(
+//     name.value.search(" ") == -1 || 
+//     name.value[name.value.length - 1] == " " ||
+//     name.value[0] == " ")
+//     {
+//         erros.push("Please, insert your name");
+//     }
+
+//     if (!nickname)
+// }
