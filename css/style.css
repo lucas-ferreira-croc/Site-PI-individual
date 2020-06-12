@@ -110,7 +110,6 @@ body{
 }
 
 .gerenciador_imagem{
-    display: none;
     margin-top: 273px;
     position: absolute;
 }
@@ -121,10 +120,13 @@ body{
     margin-top: 620px;
     margin-left: 24px;
     position: absolute;
+
 }
 
 .fechar{
     opacity: 0%;
+    height: 33px;
+    width: 142px;
 }
 
 .logo_index{
