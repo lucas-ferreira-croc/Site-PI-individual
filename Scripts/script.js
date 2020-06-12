@@ -65,7 +65,10 @@ function fechaTexto()
 //fim das funções da página Index
 
 // começo das funções da página preview
-function showTheCroc()
+
+const banco = require(`./banco`);
+
+function showTheCroc(Login, Senha, Email)
 {
     var erros = validaForm(); 
     mensagemErro.innerHTML = "";
@@ -85,6 +88,23 @@ function showTheCroc()
         formulario.style.display = 'none';
         god.style.display = 'block';
     }
+    
+    console.log('Iniciando inclusão de um novo usuário cadastrado...');
+    console.log(`Login do usuário: ${Login}, senha do usuário ${Senha}, e-mail do usuario${Email}`);
+
+    banco.conectar().then(() => {
+
+        return banco.sql.query(`
+        INSERT into Usuario values (${login},${senha},${email});`);
+
+    }).catch(erro => {
+
+        console.error(`Erro ao tentar registrar aquisição na base: ${erro}`);
+
+    }).finally(() => {
+		console.log('Registro inserido com sucesso! \n');
+        banco.sql.close();
+    });    
 }
 
 function validaForm()
@@ -142,7 +162,15 @@ function validaForm()
         }    
     }
 
+    if(password.length < 5)
+    {
+        erros.push("That's too short, your password should have at least 5 characters");
+    }
     
-    
+    if(password.length > 20)
+    {
+        erros.push("That's too long, your password should have at max 20 characters");
+    }
+ 
     return erros;
 }
