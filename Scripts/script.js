@@ -1,13 +1,13 @@
 //funções da página Index
 function manager()
 {
-    if(gi.style.display == 'none')
+    if(aparece_manager.style.display == 'none')
     {
-        gi.style.display = 'block';
+        aparece_manager.style.display = 'block';
     }
     else
     {
-        gi.style.display = 'none';
+        aparece_manager.style.display = 'none';
     }
 }
 
