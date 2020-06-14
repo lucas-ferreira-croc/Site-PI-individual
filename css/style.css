@@ -257,6 +257,79 @@ body{
     color: #4d1cb8;
 }
 
+.Unity{
+    width: 45;
+    height: 18px;
+    position: absolute;
+    margin-left: 860px;
+    margin-top: 290px;
+    display: none;
+    color: #4d1cb8;
+}
+
+.vaporwave{
+    width: 102px;
+    height: 10px;
+    position: absolute;
+    margin-left: 1175px;
+    margin-top: 270px;
+    display: none;
+    color: #4d1cb8;
+}
+
+.engine{
+    width: 61px;
+    height: 13px;
+    position: absolute;
+    margin-left: 1060px;
+    margin-top: 290px;
+    display: none;
+    color: #4d1cb8;
+}
+
+.unreal{
+    width: 58px;
+    height: 18px;
+    position: absolute;
+    margin-left: 1150px;
+    margin-top: 315px;
+    display: none;
+    color: #4d1cb8;
+}
+
+.pixelArt{
+    width: 58px;
+    height: 18px;
+    position: absolute;
+    margin-left: 782px;
+    margin-top: 360px;
+    display: none;
+    color: #4d1cb8;
+    
+}
+
+.tresD{
+    width: 112px;
+    height: 18px;
+    position: absolute;
+    margin-left: 385px;
+    margin-top: 405px;
+    display: none;
+    color: #4d1cb8;
+}
+
+.semiotica{
+    width: 96px;
+    height: 18px;
+    position: absolute;
+    margin-left: 545px;
+    margin-top: 405px;
+    display: block;
+    color: #4d1cb8;
+}
+
+
+
 .texto_botao{
     width: 30px;
     height: 26px;
