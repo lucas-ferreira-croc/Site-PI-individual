@@ -10,7 +10,7 @@
     <title>Croc Studios</title>
 </head>
 
-<body class="body_index" onclick="teste()">
+<body class="body_index">
     <div class="container_barra">
         <img src="img/win98.png" alt="Barra de tarefas do windows 98" class="barra_tarefa">
     </div>
@@ -29,8 +29,7 @@
         <img onclick="abreInternet()" class="iconIE" src="img/icon-internet.png" alt="Icone Internet explorer">
 
         <img onclick="abreConexao()" class="iconN" src="img/icon-network.png" alt="Icone networking">
-       
-        
+            
         <img onclick="abreTexto()" class="iconH" src="img/icon-historia.png" alt="Icone de um arquivo de texto sobre a historia do croc studios">
            
         <div>
@@ -40,17 +39,18 @@
         </div>
     </div>
     
-    <div class="gerenciador_botao" onclick="manager()"></div>
     
-    <div id="aparece_manager" class="botao_manager">
+    <div id="aparece_manager" class="div_manager">
         <img id="gi" class="gerenciador_imagem" src="img/gerenciador-aplicacoes.png" alt="gerenciador de aplicações do windows 98">
         <div class="shutdown">
-            <a href="preview.html">
+            <a href="preview.html" class="fechar">
                 <div class="fechar"></div>
             </a>
         </div>
     </div>
-
+    <div class="gerenciador_botao" onclick="manager()"></div>
+    
+    
     <img class="logo_index" src="img/crocEscrito.png" alt="logo da croc Studios">
 
     <img id="lixo" class="lixeira_index" src="img/lixeira.png" alt="Imagem da lixeira que ficará exposta no desktop">
@@ -79,11 +79,21 @@
     
     <div onclick="abreInternet()" class="internet_barra"></div>
 
-    <div id="tips_texto" class="saoPaulo">
+    <div id="tips_texto_sp" class="saoPaulo">
         <div class="container-tooltip-historia">___________                  
-            <div class="tooltip-historia">São Paulo é uma cidade tchutchuca</div>
+            <div class="tooltip-historia">Biggest and richest city in Brazil, place of multicultural influences and social inequalty. <br>
+            In the Words of Mike Pondsmith(creator of Cyberpunk 2020, famous pen and paper RPG), along with Rio, is the most Cyberpunk Place he has ever been.
+            </div>
         </div>
     </div>
-    
+
+  <div id="tips_texto_anime" class="Anime">
+        <div class="container-tooltip-historia">________
+            <div class="tooltip-historia">Japanese Animation
+            </div>
+        </div>
+  </div>
+
+
 </body>
 </html>

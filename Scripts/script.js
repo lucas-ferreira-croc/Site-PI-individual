@@ -54,19 +54,21 @@ function fechaInternet()
 function abreTexto()
 {
     historia.style.display = 'block';
-    tips_texto.style.display = 'block';
+    tips_texto_sp.style.display = 'block';
+    tips_texto_anime.style.display = 'block';
 }
 
 function fechaTexto()
 {
     historia.style.display = 'none';
-    tips_texto.style.display = 'none';
+    tips_texto_sp.style.display = 'none';
+    tips_texto_anime.style.display = 'none';
 }
 //fim das funções da página Index
 
 // começo das funções da página preview
 
-const banco = require(`./banco`);
+// const banco = require(`./banco`);
 
 function showTheCroc(Login, Senha, Email)
 {
@@ -87,6 +89,8 @@ function showTheCroc(Login, Senha, Email)
     {
         formulario.style.display = 'none';
         god.style.display = 'block';
+        aiai.style.display = 'block';
+
     }
     
     console.log('Iniciando inclusão de um novo usuário cadastrado...');
@@ -162,12 +166,12 @@ function validaForm()
         }    
     }
 
-    if(password.length < 5)
+    if(password.value.length < 5)
     {
         erros.push("That's too short, your password should have at least 5 characters");
     }
     
-    if(password.length > 20)
+    if(password.value.length > 20)
     {
         erros.push("That's too long, your password should have at max 20 characters");
     }

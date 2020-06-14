@@ -101,6 +101,10 @@ body{
     position: absolute;
 }
 
+.div_manager{
+    display: none;
+}
+
 .gerenciador_botao{
     width: 134px;
     height: 55px;
@@ -124,7 +128,6 @@ body{
 }
 
 .fechar{
-    opacity: 0%;
     height: 33px;
     width: 142px;
 }
@@ -203,6 +206,7 @@ body{
     position: absolute;
 }
 
+
 .saoPaulo{
     width: 92px;
     height: 18px;
@@ -223,7 +227,7 @@ body{
 .tooltip-historia{position: absolute; 
     visibility: hidden; 
     font-size: 15px;
-    width: 200px;
+    width: 300px;
     background: #232323;
     color: #ffff;
     text-align: center; 
@@ -231,7 +235,7 @@ body{
     border-radius: 6px;
     bottom: 100%; 
     left: 50%; 
-    margin-left: -100px; 
+    margin-left: -150px; 
     margin-bottom: 5px; }
 
  .tooltip-historia::after {content: " "; 
@@ -243,8 +247,15 @@ body{
     border-style: solid; 
     border-color: #232323 transparent transparent transparent;}
 
-
-
+.Anime{
+    width: 92px;
+    height: 18px;
+    position: absolute;
+    margin-left: 1180px;
+    margin-top: 250px;
+    display: none;
+    color: #4d1cb8;
+}
 
 .texto_botao{
     width: 30px;
@@ -380,4 +391,5 @@ body{
     width: 500px;
     height: 500px;
 }
+
 /* fim do css da página media */
