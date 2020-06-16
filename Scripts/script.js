@@ -50,6 +50,7 @@ function abreTexto() {
     tips_texto_unreal.style.display = 'block';
     tips_texto_pixel.style.display = 'block';
     tips_texto_tresD.style.display = 'block';
+    tips_texto_semiotica.style.display = 'block';
 }
 
 function fechaTexto() {
@@ -62,6 +63,7 @@ function fechaTexto() {
     tips_texto_unreal.style.display = 'none';
     tips_texto_pixel.style.display = 'none';
     tips_texto_tresD.style.display = 'none';
+    tips_texto_semiotica.style.display = 'none';
 }
 //fim das funções da página Index
 

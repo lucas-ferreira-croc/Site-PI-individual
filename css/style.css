@@ -324,7 +324,7 @@ body{
     position: absolute;
     margin-left: 545px;
     margin-top: 405px;
-    display: block;
+    display:  none;
     color: #4d1cb8;
 }
 
