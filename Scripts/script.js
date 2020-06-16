@@ -111,7 +111,6 @@ function showTheCroc(Login, Senha, Email) {
 function validaForm() {
     var erros = [];
     var nm = txtname.value;
-    console.log(nm);
 
     if (!nm) {
         erros.push("please, fill out your name");
@@ -134,20 +133,20 @@ function validaForm() {
     }
 
     if (email.value.indexOf("@") == -1) {
-        erros.push("the email format should be: user@domain.com");
+        erros.push("the email format should be: user@domain.com , you don't have '@' in yours");
     }
     else {
         var parts = email.value.split("@");
         var domain = parts[1];
         if (domain.indexOf(".") == -1) {
-            erros.push("the email format should be: user@domain.com")
+            erros.push("the email format should be: user@domain.com , you don't have '.' in yours")
         }
         else {
             var domainParts = domain.split(".");
             var ext = domainParts[1];
 
-            if (ext.length > 4 || ext.length < 2) {
-                erros.push("the email format should be: user@domain.com")
+            if (ext.length > 4 || ext.length <= 2) {
+                erros.push("the email format should be: user@domain.com , you don't have '.com' in yours")
             }
         }
     }
