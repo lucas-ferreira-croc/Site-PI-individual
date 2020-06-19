@@ -402,7 +402,7 @@ body{
     width: 1000px;
     height: 700px;
     position: relative;
-    background-color: black;
+
 }
 
 .div_aviso{
@@ -465,4 +465,13 @@ body{
     height: 500px;
 }
 
+.already{
+    padding-left: 50px;
+}
+
 /* fim do css da página media */
+
+/* começo do css da página login */
+.botaoLogin{
+    margin-top: 75px;
+}

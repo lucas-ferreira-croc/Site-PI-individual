@@ -161,3 +161,8 @@ function validaForm() {
 
     return erros;
 }
+
+function showThelogin(){
+    formulario.style.display = 'none';
+    god.style.display = 'block';
+}
