@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
 </head>
+
 <body>
+    <h1>Calculadora Teste</h1>
     
+    <form action="" name="calc">
+        <div id="primeiraLinha">
+            <input type="text" id="visor" name="visor"> <br>
+            <input type="button" value='7' onclick="botao(value)">
+            <input type="button" value='8' onclick="botao(value)">
+            <input type="button" value='9' onclick="botao(value)">
+            <input type="button" value='/' onclick="botao(value)">
+        </div>
+        <div id="segundaLinha">
+            <input type="button" value='4' onclick="botao(value)">
+            <input type="button" value='5' onclick="botao(value)">
+            <input type="button" value='6' onclick="botao(value)">
+            <input type="button" value='*' onclick="botao(value)">
+        </div>
+        <div id="terceiraLinha">
+            <input type="button" value='3' onclick="botao(value)">
+            <input type="button" value='2' onclick="botao(value)">
+            <input type="button" value='1' onclick="botao(value)">
+            <input type="button" value='-' onclick="botao(value)">
+        </div>
+        <div id="quartaLinha">
+            <input type="button" value='C' onclick="botao(value)">
+            <input type="button" value='0' onclick="botao(value)">
+            <input type="button" value='=' onclick="calcula(value)">
+            <input type="button" value='+'' onclick="botao(value)">
+        </div>
+
+
+    </form>
+
 </body>
+
 </html>
+<script>
+    var valor;
+    var resultado;
+
+    function botao(num){
+        valor = document.calc.visor.value += num;
+    }
+
+    function reseta(){
+        document.calc.visor.value = '';
+    }
+    
+    function calcula(){
+        resultado = eval(valor);
+        document.calc.visor.value = resultado;
+    }
+
+</script>
