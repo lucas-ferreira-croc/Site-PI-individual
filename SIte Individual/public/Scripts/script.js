@@ -85,10 +85,7 @@ function showTheCroc(Login, Senha, Email) {
         }
     }
     else {
-        formulario.style.display = 'none';
-        god.style.display = 'block';
-        aiai.style.display = 'block';
-
+        formulario.style.display = 'none';    
     }
 
     console.log('Iniciando inclusão de um novo usuário cadastrado...');
