@@ -70,9 +70,7 @@ function fechaTexto() {
 
 // começo das funções da página preview
 
-// const banco = require(`./banco`);
-
-function showTheCroc(Login, Senha, Email) {
+function showTheCroc() {
     var erros = validaForm();
     mensagemErro.innerHTML = "";
 
@@ -85,30 +83,22 @@ function showTheCroc(Login, Senha, Email) {
         }
     }
     else {
-        formulario.style.display = 'none';    
+        formulario.style.display = 'none';
+
     }
-
-    console.log('Iniciando inclusão de um novo usuário cadastrado...');
-    console.log(`Login do usuário: ${Login}, senha do usuário ${Senha}, e-mail do usuario${Email}`);
-
-    banco.conectar().then(() => {
-
-        return banco.sql.query(`
-        INSERT into Usuario values (${login},${senha},${email});`);
-
-    }).catch(erro => {
-
-        console.error(`Erro ao tentar registrar aquisição na base: ${erro}`);
-
-    }).finally(() => {
-        console.log('Registro inserido com sucesso! \n');
-        banco.sql.close();
-    });
 }
 
 function validaForm() {
+    let validado = false;
     var erros = [];
+
     var nm = txtname.value;
+
+    let usuario = {
+        nickname: nm,
+        email: email.value,
+        senha: password.value
+    };
 
     if (!nm) {
         erros.push("please, fill out your name");
@@ -157,6 +147,20 @@ function validaForm() {
         erros.push("That's too long, your password should have at max 20 characters");
     }
 
+    validado = true;
+
+    if (validado && erros.length == 0) {
+        fetch('/usuarios/cadastrarUsuario', {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(usuario)
+        }).then(function (response) {
+            response.status;
+        });
+        window.location.href = 'video.html';
+    }
     return erros;
 }
 
@@ -167,14 +171,14 @@ function entrar() {
         method: "POST",
         body: formulario
     }).then(resposta => {
-        
+
         if (resposta.ok) {
 
             resposta.json().then(json => {
 
                 sessionStorage.login_usuario_meuapp = json.nick;
                 sessionStorage.nome_usuario_meuapp = json.nome;
-                
+
                 window.location.href = 'video.html';
             });
 

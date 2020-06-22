@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var sequelize = require('../models').sequelize;
 var Usuario = require('../models').Usuario;
+var banco = require('./banco');
 
 let sessoes = [];
 
@@ -104,6 +105,25 @@ router.get('/', function(req, res, next) {
 		console.error(erro);
 		res.status(500).send(erro.message);
   	});
+});
+
+router.post('/cadastrarUsuario', function(request, response , next){
+	console.log('Entrando na rota de casdastro');
+	
+	let usuario = request.body;
+
+	let query = `insert into Usuario values ('${usuario.nickname}', '${usuario.email}' , '${usuario.senha}')`;
+		
+	banco.conectar().then(function () {
+		return banco.sql.query(query);
+	}).catch((erro) => {
+		console.error(`Erro ao tentar registrar aquisição na base: ${erro}`);
+	}).finally(function() {
+		console.error('Deu certo');
+		response.status(201);
+		banco.sql.close();
+	});		
+
 });
 
 module.exports = router;
