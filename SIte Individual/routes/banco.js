@@ -1,6 +1,6 @@
 var configuracoes = {
     banco: {
-        server: "",
+        server: "luvaspessoal.database.windows.net",
         user: "luvas",
         password: "53677821lA",
         database: "bdPessoalPI ",
